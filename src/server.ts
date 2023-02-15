@@ -1,8 +1,12 @@
-const a: number = 4;
-const b: number = 34;
+import express, { request, response } from "express"
+import {user} from '@models/user'
 
-const nome: string = "Luciano"
+const app = express()
 
-console.log(a + b)
-console.log(" ")
-console.log( nome)
+const conta : number =  8;
+
+app.get("/", (request, response) => {
+  return response.json({ message: 'Hello World' })
+})
+
+app.listen(3000)
