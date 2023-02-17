@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es2017",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    "module": "commonjs",                                /* Specify what module code is generated. */
+    "lib": [ "es6" ],                                  /* Specify a file that bundles all outputs into one JavaScript file. If 'declaration' is true, also designates a file that bundles all .d.ts output. */
+    "allowJs": true,
+    "sourceMap": true,
+    "outDir": "./dist",                                   /* Specify an output folder for all emitted files. */
+    "rootDir": "./src",
+    "removeComments": true,                           /* Disable emitting comments. */
+    "typeRoots": [
+      "./node_modules/@types",
+      "./src/@types"
+    ],
+    "esModuleInterop": true,                             /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,                                 /* Skip type checking all .d.ts files. */
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths":{
+      "@controllers/*":["./src/controllers/*"],
+      "@models/*":["./src/models/*"],
+      "@views/*":["./src/views/*"],
+      "@config/*":["./src/config/*"]
+    }
+  }
+}

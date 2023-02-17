@@ -1,8 +1,10 @@
 module.exports = {
   parser: "@typescript-eslint/parser",
   env: {
-    es2021: true,
-    node: true
+    es6: true,
+    node: true,
+    brownser: true
+
   },
 
   plugins: ["@typescript-eslint"],
@@ -17,8 +19,24 @@ module.exports = {
   overrides: [
   ],
   parserOptions: {
-    ecmaVersion: "latest"
+    ecmaVersion: "latest",
+    sourceType: module,
+    project: [
+      './tsconfig.json'
+    ]
   },
   rules: {
+    // ident:[
+    //   "error",
+    //   "tab"
+    // ],
+    // quotes: [
+    //   "error",
+    //   "double"
+    // ],
+    // semi:[
+    //   "error",
+    //   "never"
+    // ]
   }
-};
+}

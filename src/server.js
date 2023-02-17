@@ -1,4 +1,4 @@
-import express, { request, response } from 'express'
+import express, { request, response } from "express"
 import { user } from '@models/user'
 
 const app = express()

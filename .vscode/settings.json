@@ -1,0 +1,15 @@
+{
+  "workbench.colorTheme": "GitHub Dark",
+  "workbench.iconTheme": "material-icon-theme",
+
+  "editor.autoClosingQuotes": "always",
+  "editor.fontLigatures": true,
+  "editor.autoIndent": "full",
+  "editor.minimap.enabled": false,
+  "editor.fontFamily": "Fira Code",
+
+  "prettier.arrowParens": "always" ,
+  "prettier.bracketSpacing": true,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all"
+}
