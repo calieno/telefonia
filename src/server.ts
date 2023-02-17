@@ -1,15 +1,16 @@
-import express, { request, response } from "express"
-import {user} from '@models/user'
-import { config as dotenv } from 'dotenv'
+import express, { request, response } from "express";
+import { user } from "@models/user";
+import { config as dotenv } from "dotenv";
 
-const porta = process.env.porta
+const porta = process.env.porta;
 
-const app = express()
+const app = express();
 
-const conta : number =  8;
+const conta = 8;
 
 app.get("/", (request, response) => {
-  return response.json({ message: 'Hello World' })
-})
-console.log(porta)
-app.listen(porta)
+  return response.json({ message: "Hello World" });
+});
+console.log(porta);
+console.log(2 * conta);
+app.listen(porta);

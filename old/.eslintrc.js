@@ -3,8 +3,7 @@ module.exports = {
   env: {
     es6: true,
     node: true,
-    brownser: true
-
+    brownser: true,
   },
 
   plugins: ["@typescript-eslint"],
@@ -14,16 +13,13 @@ module.exports = {
     "prettier",
     "plugin:@typescript-eslint/recommended",
     "prettier/@typescript-eslint",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
   ],
-  overrides: [
-  ],
+  overrides: [],
   parserOptions: {
     ecmaVersion: "latest",
     sourceType: module,
-    project: [
-      './tsconfig.json'
-    ]
+    project: ["./tsconfig.json"],
   },
   rules: {
     // ident:[
@@ -38,5 +34,5 @@ module.exports = {
     //   "error",
     //   "never"
     // ]
-  }
-}
+  },
+};

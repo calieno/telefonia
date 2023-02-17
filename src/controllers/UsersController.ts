@@ -1,7 +1,5 @@
-import { user } from "@models/user"
+import { user } from "@models/user";
 
-class userController {
+class userController {}
 
-}
-
-export {userController}
+export { userController };

@@ -1,0 +1,6 @@
+{
+  "prettier.arrowParens": "always",
+  "prettier.bracketSpacing": true,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all"
+}
