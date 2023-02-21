@@ -5,6 +5,8 @@
     "sourceMap": true,
     "strictFunctionTypes": true,
     "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
 
     "target": "es2019" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
     "module": "commonjs" /* Specify what module code is generated. */,
@@ -17,6 +19,7 @@
     "typeRoots": ["./node_modules/@types", "./src/@types"],
     "skipLibCheck": true /* Skip type checking all .d.ts files. */,
     "baseUrl": ".",
+
     "paths": {
       "@controllers/*": ["./src/controllers/*"],
       "@models/*": ["./src/models/*"],

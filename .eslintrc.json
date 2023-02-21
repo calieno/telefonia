@@ -5,9 +5,12 @@
     "node": true
   },
   "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
   "extends": [
+    "eslint:recommended",
     "standard-with-typescript",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
   ],
   "overrides": [],
   "parserOptions": {
@@ -15,5 +18,12 @@
     "sourceType": "module",
     "project": ["./tsconfig.json"]
   },
-  "rules": {}
+  "rules": {
+    "@typescript-eslint/explicit-function-type":"off",
+    "object-curly-spacing":["error", "always"],
+    "array-bracket-spacing":["error", "always"],
+    "space-in-parens":["error", "always"],
+    "prettier/prettier": "error"
+
+  }
 }
